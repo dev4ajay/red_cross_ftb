@@ -1,0 +1,66 @@
+/* Define custom SCSS variables */
+/* Top Bar Styles */
+.top-bar {
+  background-image: linear-gradient(to right, #ff5252, #ffc107);
+  color: #ffffff;
+  padding: 10px 0;
+}
+.top-bar .email-text {
+  font-weight: bold;
+  color: #ffffff;
+}
+.top-bar .social-icons {
+  display: flex;
+  gap: 10px;
+}
+.top-bar .social-icons a {
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.top-bar .social-icons a:hover {
+  color: #f8d7da;
+}
+
+/* Navbar Styles */
+.navbar {
+  padding: 15px 0;
+  background-color: #d32f2f;
+}
+.navbar .navbar-brand img {
+  height: 50px;
+}
+.navbar .navbar-nav .nav-item {
+  margin-left: 15px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #d32f2f;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffcc00 !important; /* Change color for active links */
+  font-weight: bold; /* Make the text bold */
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .top-bar {
+    text-align: center;
+    flex-direction: column;
+  }
+  .top-bar .social-icons {
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+}/*# sourceMappingURL=header.component.css.map */

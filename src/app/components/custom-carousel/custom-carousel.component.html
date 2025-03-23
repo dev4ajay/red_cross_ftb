@@ -1,0 +1,18 @@
+<div class="carousel-container">
+  <button (click)="prevSlide()" class="nav-button left">&#10094;</button>
+
+  <div class="carousel">
+    <div
+      *ngFor="
+        let image of images.slice(currentIndex, currentIndex + visibleSlides)
+      "
+      class="carousel-item"
+    >
+      <img [src]="image.src" [alt]="image.name" />
+      <h3>{{ image.name }}</h3>
+      <p>{{ image.position }}</p>
+    </div>
+  </div>
+
+  <button (click)="nextSlide()" class="nav-button right">&#10095;</button>
+</div>

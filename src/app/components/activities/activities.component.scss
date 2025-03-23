@@ -1,0 +1,78 @@
+.activities-section {
+    text-align: center;
+    padding: 40px 20px;
+  
+    h2 {
+      color: #d60000;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    .activities-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  
+      .activity-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        // width: 300px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+  
+        &:hover {
+        
+          transform: translateY(-10px);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+  
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+  
+        .activity-info {
+          padding: 15px;
+  
+          h3 {
+            color: #d60000;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+          }
+  
+          p {
+            color: #555;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .mission-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 20px;
+
+    span {
+      color: red;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .activities-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .activity-card {
+      width: 90%;
+    }
+  }
+  

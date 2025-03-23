@@ -1,0 +1,25 @@
+<div class="container">
+    <h2 class="mission-title text-center">Our Services</h2>
+  
+    <div class="slider-container" (mouseenter)="stopAutoSlide()" (mouseleave)="startAutoSlide()">
+      <!-- Slides Wrapper -->
+      <div class="slides-wrapper">
+        <div class="row">
+          <div 
+            class="col-lg-3 col-md-4 col-12 slide" 
+            *ngFor="let slide of visibleSlides">
+      
+              <img [src]="slide.img" class="card-img-top" alt="Profile Image">
+              <div class="card-body">
+         
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Navigation Buttons -->
+      <button class="prev" (click)="prevSlide()">&#10094;</button>
+      <button class="next" (click)="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+  

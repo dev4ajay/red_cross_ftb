@@ -1,0 +1,5 @@
+.carousel-item img {
+  height: 500px; /* Adjust the height as needed */
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=image-carousel.component.css.map */

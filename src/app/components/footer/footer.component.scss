@@ -1,0 +1,87 @@
+footer {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.btn-flat {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  footer .btn-flat {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    margin: 5px !important;  /* Add proper spacing */
+  }
+
+  /* Center the social media icons and add spacing */
+  footer .d-flex.mt-4 {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 10px !important;  /* Adds space between elements */
+  }
+
+  /* Ensure buttons have equal spacing */
+  footer .d-flex.mt-4 button {
+    margin: 5px auto !important;  /* Adjust spacing for better layout */
+  }
+  footer {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  /* Ensure flex containers wrap properly */
+  footer .d-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
+
+  /* Ensure individual sections take full width */
+  footer .footer-section, 
+  footer div {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  /* Ensure text aligns properly */
+  .footer-p {
+    text-align: justify;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  /* Adjust social media icons */
+  footer .btn-flat {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  /* Ensure the bottom section is stacked */
+  footer .d-flex.mt-4 {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  footer small {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

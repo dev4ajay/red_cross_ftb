@@ -1,0 +1,110 @@
+$primary-color: #d50000;
+$secondary-color: #ffcc00;
+$text-color: #fff;
+$bg-color: #f7f7f7;
+
+.vision-container {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(to bottom, $primary-color, $secondary-color);
+  color: $text-color;
+  animation: fadeIn 1.2s ease-in-out;
+
+  .vision-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    span {
+      color: yellow;
+    }
+  }
+
+  .vision-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+
+    .vision-text {
+      flex: 1;
+      max-width: 500px;
+      font-size: 18px;
+      line-height: 1.6;
+      background: rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      animation: slideUp 1s ease-out;
+    }
+
+    .vision-goals {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+
+      .goal-card {
+        width: 250px;
+        padding: 20px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+        animation: bounceIn 1.2s ease-in-out;
+
+        &:hover {
+          transform: translateY(-10px);
+          background: rgba(255, 255, 255, 0.4);
+        }
+
+        .icon-container {
+          font-size: 40px;
+          color: yellow;
+          margin-bottom: 10px;
+        }
+
+        h3 {
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+        p {
+          font-size: 16px;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  80% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .vision-content {
+    flex-direction: column;
+  }
+
+  .vision-goals {
+    .goal-card {
+      width: 90%;
+    }
+  }
+}

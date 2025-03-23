@@ -1,0 +1,13 @@
+<div class="activities-section">
+    <h2>Programmes & Activities</h2>
+    <div class="activities-container">
+      <div *ngFor="let activity of activities" class="activity-card">
+        <img [src]="activity.image" [alt]="activity.title" />
+        <div class="activity-info">
+          <h3>{{ activity.title }}</h3>
+          <p>{{ activity.date }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

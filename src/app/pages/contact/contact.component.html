@@ -1,0 +1,54 @@
+<div class="contact-container">
+  
+    <!-- Left Side: Contact Info -->
+    <div class="contact-info">
+      <h2 class="title">Get in <span>Touch</span></h2>
+      
+      <div class="info-box">
+        <div class="icon">&#9993;</div>
+        <div>
+          <h3>Email</h3>
+          <p>{{mail}}</p>
+        </div>
+      </div>
+  
+      <div class="info-box">
+        <div class="icon">&#9742;</div>
+        <div>
+          <h3>Phone</h3>
+          <p>+91 98765 43210</p>
+        </div>
+      </div>
+  
+      <div class="info-box">
+        <div class="icon">&#127968;</div>
+        <div>
+          <h3>Address</h3>
+          <p>Red Cross HQ, New Delhi, India</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Right Side: Contact Form -->
+    <div class="contact-form">
+      <h2 class="title">Send Us a <span>Message</span></h2>
+  
+      <form (submit)="onSubmit()" #contactForm="ngForm">
+        <div class="input-box">
+          <input type="text" placeholder="Your Name" required [(ngModel)]="contact.name" name="name">
+        </div>
+  
+        <div class="input-box">
+          <input type="email" placeholder="Your Email" required [(ngModel)]="contact.email" name="email">
+        </div>
+  
+        <div class="input-box">
+          <textarea rows="5" placeholder="Your Message" required [(ngModel)]="contact.message" name="message"></textarea>
+        </div>
+  
+        <button type="submit" class="send-btn">Send Message</button>
+      </form>
+    </div>
+    
+  </div>
+  

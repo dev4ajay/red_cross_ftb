@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+    .row.align-items-center {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  
+    .col-md-6 {
+      width: 100%;
+    }
+    .h2{
+        margin-top: 12px;
+    }
+    p{
+        text-align: justify;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  
+    img.img-fluid {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  }
+  

@@ -1,0 +1,16 @@
+<div class="our-work">
+    <h2 class="title">Our <span>Work</span></h2>
+  
+    <div class="work-container">
+      <div class="work-card" *ngFor="let work of works">
+        <div class="work-image">
+          <img [src]="work.image" alt="work image">
+        </div>
+        <div class="work-content">
+          <h3>{{ work.title }}</h3>
+          <p>{{ work.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

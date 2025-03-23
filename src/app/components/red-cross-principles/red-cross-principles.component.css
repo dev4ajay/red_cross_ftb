@@ -1,0 +1,41 @@
+.principles-container {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #e60000;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #e60000;
+  margin: 0 10px;
+}
+
+.principles-list {
+  list-style-type: none;
+  padding: 0;
+}
+.principles-list li {
+  margin-bottom: 15px;
+}
+.principles-list li strong {
+  font-size: 18px;
+  color: #000;
+}
+.principles-list li p {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}/*# sourceMappingURL=red-cross-principles.component.css.map */

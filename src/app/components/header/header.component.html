@@ -1,0 +1,77 @@
+<header>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div
+      class="container d-flex justify-content-between align-items-center flex-wrap"
+    >
+      <button class="btn btn-primary btn-sm">
+        <i class="fas fa-ambulance"></i> Ambulance on Call: 108
+      </button>
+      <span class="email-text">
+        <i class="fas fa-envelope"></i> Mail us: redcrossftb&#64;gmail.com
+      </span>
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/logo.jpg" alt="Red Cross Logo" class="logo-img" />
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+ 
+<div class="collapse navbar-collapse" id="navbarNav" #navbarNav>
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="'/home'" routerLinkActive="active" (click)="closeNavbar()">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" routerLinkActive="active">About Us</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" [routerLink]="'/mission'" routerLinkActive="active" (click)="closeNavbar()">Mission</a></li>
+        <li><a class="dropdown-item" [routerLink]="'/vision'" routerLinkActive="active" (click)="closeNavbar()">Vision</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="'/who-is-who'" routerLinkActive="active" (click)="closeNavbar()">Who is Who</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="'/our-work'" routerLinkActive="active" (click)="closeNavbar()">Our Work</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="'/contact'" routerLinkActive="active" (click)="closeNavbar()">Contact Us</a>
+    </li>
+  </ul>
+</div>
+
+    </div>
+  </nav>
+</header>

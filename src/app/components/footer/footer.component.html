@@ -1,0 +1,62 @@
+<footer class="shadow">
+  <div class="d-flex flex-column mx-auto py-5" style="width: 90%">
+    <div class="flex-wrap d-flex justify-content-between">
+      <!-- Logo & Description -->
+      <div class="footer-section">
+        <a href="/" class="d-flex align-items-center p-0 text-dark">
+          <img alt="logo" src="assets/logo.jpg" width="230px" />
+          <span class="ms-3 h5 font-weight-bold"></span>
+        </a>
+        <p class="my-3 footer-p" style="width: 250px">
+          We are creating High Quality Resources and tools to aid developers
+          during the development of their projects.
+        </p>
+      </div>
+
+      <!-- Devwares Links -->
+      <div>
+        <p class="h5 mb-4" style="font-weight: 600">Red Cross Socity</p>
+        <div class="d-flex flex-column" style="cursor: pointer; padding: 0">
+          <a *ngFor="let link of devwaresLinks" [href]="link.url">{{
+            link.label
+          }}</a>
+        </div>
+      </div>
+
+      <!-- Help Links -->
+      <div>
+        <p class="h5 mb-4" style="font-weight: 600">Help</p>
+        <div class="d-flex flex-column" style="cursor: pointer; padding: 0">
+          <a *ngFor="let link of helpLinks" [href]="link.url">{{
+            link.label
+          }}</a>
+        </div>
+      </div>
+
+      <!-- Products Links -->
+      <div>
+        <p class="h5 mb-4" style="font-weight: 600">Our Work</p>
+        <div class="d-flex flex-column" style="cursor: pointer; padding: 0">
+          <a *ngFor="let link of productLinks" [href]="link.url">{{
+            link.label
+          }}</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="d-flex mt-4 mx-auto" style="width: 100%">
+      <small class="text-center" style="width: 50%"
+        >&copy; Red Cross Fatehabad, 2024. All rights reserved.</small
+      >
+
+      <!-- Social Media Icons -->
+      <button
+        *ngFor="let icon of socialIcons"
+        class="btn btn-dark btn-flat p-2 mx-1"
+      >
+        <i [class]="icon.class"></i>
+      </button>
+    </div>
+  </div>
+</footer>
