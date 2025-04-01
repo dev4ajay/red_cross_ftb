@@ -1,22 +1,27 @@
-$primary-color: #d50000;
-$secondary-color: #ffcc00;
-$text-color: #fff;
-$bg-color: #f7f7f7;
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 .vision-container {
   text-align: center;
-  padding: 50px;
-  background: linear-gradient(to bottom, $primary-color, $secondary-color);
-  color: $text-color;
-  animation: fadeIn 1.2s ease-in-out;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);  color: #fff;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
 
-  .vision-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-
-    span {
-      color: yellow;
+  .header {
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      animation: fadeIn 1s ease-in-out;
+      
+      span {
+        color: yellow;
+      }
+    }
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      opacity: 0;
+      animation: slideIn 1s ease-in-out forwards;
     }
   }
 
@@ -25,57 +30,20 @@ $bg-color: #f7f7f7;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    align-items: center;
+    margin-top: 40px;
 
-    .vision-text {
-      flex: 1;
-      max-width: 500px;
-      font-size: 18px;
-      line-height: 1.6;
-      background: rgba(0, 0, 0, 0.1);
-      padding: 20px;
+    .vision-box {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 25px;
       border-radius: 10px;
-      animation: slideUp 1s ease-out;
+      width: 288px;
+      text-align: center;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+      transform: translateY(20px);
+      opacity: 1;  // Ensure visibility
+      transition: all 0.5s ease-in-out;
     }
-
-    .vision-goals {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-
-      .goal-card {
-        width: 250px;
-        padding: 20px;
-        border-radius: 12px;
-        background: rgba(255, 255, 255, 0.2);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        text-align: center;
-        transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
-        animation: bounceIn 1.2s ease-in-out;
-
-        &:hover {
-          transform: translateY(-10px);
-          background: rgba(255, 255, 255, 0.4);
-        }
-
-        .icon-container {
-          font-size: 40px;
-          color: yellow;
-          margin-bottom: 10px;
-        }
-
-        h3 {
-          font-size: 24px;
-          font-weight: bold;
-        }
-
-        p {
-          font-size: 16px;
-          opacity: 0.8;
-        }
-      }
-    }
+    
   }
 }
 
@@ -85,26 +53,18 @@ $bg-color: #f7f7f7;
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(50px); }
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes bounceIn {
-  0% { transform: scale(0.8); opacity: 0; }
-  80% { transform: scale(1.1); opacity: 1; }
-  100% { transform: scale(1); }
-}
-
-// Responsive
+// Responsive Design
 @media (max-width: 768px) {
-  .vision-content {
-    flex-direction: column;
+  .header h1 {
+    font-size: 2rem;
   }
 
-  .vision-goals {
-    .goal-card {
-      width: 90%;
-    }
+  .vision-box {
+    width: 90%;
   }
 }

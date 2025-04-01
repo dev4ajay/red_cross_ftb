@@ -63,22 +63,22 @@ export class WhoIsWhoComponent {
   }
   teamMembers = [
     {
-      name: 'John Doe',
-      position: 'Chairman',
-      image: 'https://plus.unsplash.com/premium_photo-1677529496297-fd0174d65941?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGVhbXxlbnwwfHwwfHx8MA%3D%3D',
-      bio: 'Leading humanitarian efforts worldwide.'
+      name: 'Mandeep Kaur, IAS',
+      position: 'Deputy Commissioner -cum- President',
+      image: 'assets/mandeep.jpeg',
+      bio: 'I am very happy to know that the District Red Cross Society, Faridabad has started its website to reach out to the people of Red Cross activities. The People living thousands of miles away can know the smallest thing of the world and the bigger can also be learned through the website in the era of Digital India. ',
     },
     {
-      name: 'Jane Smith',
+      name: 'Sh.Ramji Lal',
       position: 'Secretary',
-      image: 'https://plus.unsplash.com/premium_photo-1661767467261-4a4bed92a507?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGVhbXxlbnwwfHwwfHx8MA%3D%3D',
-      bio: 'Ensuring smooth operations and coordination.'
+      image: 'assets/RamjiLal.jpg',
+      bio: 'It is very great pleasure for us to launch the website of District Red Cross Society Fatehabad.This website will be a very useful tool for the effective working of Red Cross and St. John.',
     },
     {
-      name: 'Mike Johnson',
-      position: 'Director',
-      image: 'https://plus.unsplash.com/premium_photo-1679429320552-ec9038ccd550?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHRlYW18ZW58MHx8MHx8fDA%3D',
-      bio: 'Overseeing all health and emergency services.'
-    }
+      name: 'Sh.Surender Chugh',
+      position: 'Dy Superintendent',
+      image: 'assets/surender.jpg',
+      bio: 'Red Cross alleviates human suffering, upholds dignity, and protects life. It prevents disasters like floods and epidemics while promoting impartiality, humanity, and unity. It also organizes blood donation camps, disability support, first aid training, and vocational programs',
+    },
   ];
 }

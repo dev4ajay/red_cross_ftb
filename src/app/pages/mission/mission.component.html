@@ -1,42 +1,23 @@
-<div class="mission-container">
-    <h1 class="mission-title">
-      <span>Red Cross</span> Mission: Spreading Hope and Aid Globally
-    </h1>
-  
-    <div class="mission-content">
-      <div class="mission-text">
-        <p>
-          Our mission is to provide <strong>humanitarian aid</strong>, <strong>disaster relief</strong>, and
-          <strong>health services</strong> to those in need, regardless of their background.
-        </p>
-        <p>Join us in making a difference.</p>
-      </div>
-  
-      <div class="mission-stats">
-        <div class="stat-card">
-          <div class="icon-container"><i class="fas fa-users"></i></div>
-          <h3>500K+</h3>
-          <p>Volunteers Worldwide</p>
-        </div>
-  
-        <div class="stat-card">
-          <div class="icon-container"><i class="fas fa-hand-holding-medical"></i></div>
-          <h3>1M+</h3>
-          <p>Lives Saved</p>
-        </div>
-  
-        <div class="stat-card">
-          <div class="icon-container"><i class="fas fa-clinic-medical"></i></div>
-          <h3>2000+</h3>
-          <p>Relief Camps</p>
-        </div>
-  
-        <div class="stat-card">
-          <div class="icon-container"><i class="fas fa-heart"></i></div>
-          <h3>Global Impact</h3>
-          <p>Across 100+ Countries</p>
-        </div>
-      </div>
+<div class="mt-4 container">
+
+<div class="mission-container mt-4">
+
+  <div class="header">
+    <h1>🌍 Our Mission | <span>Red Cross Fatehabad</span> ❤️</h1>
+    <p>Serving Humanity, Saving Lives with Compassion & Action</p>
+  </div>
+
+  <div class="mission-cards">
+    <div class="card" *ngFor="let mission of missions">
+      <div class="icon">{{ mission.icon }}</div>
+      <h3 >{{ mission.title }}</h3>
+      <p >{{ mission.description }}</p>
     </div>
   </div>
-  
+<!-- 
+  <div class="cta-section">
+    <h2>🚀 Join Us & Make an Impact!</h2>
+    <button class="btn-primary" (click)="joinNow()">Join Now</button>
+  </div> -->
+</div>
+</div>

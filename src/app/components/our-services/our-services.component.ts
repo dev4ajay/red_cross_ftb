@@ -1,20 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-our-services',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule ,RouterLink],
   templateUrl: './our-services.component.html',
   styleUrl: './our-services.component.scss'
 })
 export class OurServicesComponent implements OnInit, OnDestroy {
   slides = [
-    { img: 'https://redcrossrajasthan.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-06-at-19.21.11-1-1200x554.jpeg.webp', name: 'Sh. Bandaru Dattatraya' },
-    { img: 'https://redcrossrajasthan.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-06-at-19.24.04-1-1-800x1732.jpeg.webp', name: 'Dr. Mukesh Aggarwal' },
-    { img: 'https://redcrossrajasthan.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-06-at-19.26.06-1-1-scaled-e1718007867476.jpeg.webp', name: 'Smt. Sushma Sharma' },
-    { img: 'https://redcrossrajasthan.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-06-at-19.26.06-1-1200x554.jpeg.webp', name: 'Sh. Nayab Singh Saini' },
-    { img: 'https://redcrossrajasthan.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-06-at-19.28.02-1-1200x554.jpeg.webp', name: 'Shri Ankush Miglani' }
+    { img: 'https://redcrossrajasthan.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-06-at-19.21.11-1-1200x554.jpeg.webp', name: 'OPD' ,Link:"/service-details" },
+    { img: 'https://redcrossrajasthan.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-06-at-19.24.04-1-1-800x1732.jpeg.webp', name: 'Ambulance on Call'  ,Link:"/details"},
+    { img: 'https://redcrossrajasthan.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-06-at-19.26.06-1-1-scaled-e1718007867476.jpeg.webp', name: 'Office' ,Link:"/detailes" },
+    { img: 'https://redcrossrajasthan.in/wp-content/uploads/2024/05/redcross.jpeg.webp', name: 'St. John Ambulance'  ,Link:"/detail"},
+    { img: 'https://redcrossrajasthan.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-06-at-19.28.02-1-1200x554.jpeg.webp', name: 'First Aid Training' ,Link:"/service-detail" }
   ];
   
   currentIndex = 0;

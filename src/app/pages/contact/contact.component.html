@@ -1,54 +1,66 @@
+
+  <div class="mt-4 mb-2 container">
+  <div class="header">
+    <h1>🚀 Contact Us | <span>Red Cross Fatehabad</span> ❤️</h1>
+  </div>
+  <div class="map-container mt-4 mb-2">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d27776.744769892306!2d75.456934!3d29.5136455!3m2!1i1024!2i768!4f13.1!2m1!1sred%20cross%20fatehabad!5e0!3m2!1sen!2sin!4v1743499639342!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
 <div class="contact-container">
   
-    <!-- Left Side: Contact Info -->
-    <div class="contact-info">
-      <h2 class="title">Get in <span>Touch</span></h2>
-      
-      <div class="info-box">
-        <div class="icon">&#9993;</div>
-        <div>
-          <h3>Email</h3>
-          <p>{{mail}}</p>
-        </div>
-      </div>
-  
-      <div class="info-box">
-        <div class="icon">&#9742;</div>
-        <div>
-          <h3>Phone</h3>
-          <p>+91 98765 43210</p>
-        </div>
-      </div>
-  
-      <div class="info-box">
-        <div class="icon">&#127968;</div>
-        <div>
-          <h3>Address</h3>
-          <p>Red Cross HQ, New Delhi, India</p>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Right Side: Contact Form -->
-    <div class="contact-form">
-      <h2 class="title">Send Us a <span>Message</span></h2>
-  
-      <form (submit)="onSubmit()" #contactForm="ngForm">
-        <div class="input-box">
-          <input type="text" placeholder="Your Name" required [(ngModel)]="contact.name" name="name">
-        </div>
-  
-        <div class="input-box">
-          <input type="email" placeholder="Your Email" required [(ngModel)]="contact.email" name="email">
-        </div>
-  
-        <div class="input-box">
-          <textarea rows="5" placeholder="Your Message" required [(ngModel)]="contact.message" name="message"></textarea>
-        </div>
-  
-        <button type="submit" class="send-btn">Send Message</button>
-      </form>
-    </div>
+  <!-- Left Side: Contact Info -->
+  <div class="contact-info">
+    <h2 class="title">Get in <span>Touch</span></h2>
     
-  </div>
+    <div class="info-box">
+      <div class="icon">&#9993;</div>
+      <div>
+        <h3>Email</h3>
+        <p>{{ mail }}</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <div class="icon">&#9742;</div>
+      <div>
+        <h3>Phone</h3>
+        <p>+91 9467302801</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <div class="icon">&#127968;</div>
+      <div>
+        <h3>Address</h3>
+        <p>Red Cross First Aid Society Fatehabad, Haryana, India</p>
+      </div>
+    </div>
+
+    <!-- Google Map -->
   
+  </div>
+
+  <!-- Right Side: Contact Form -->
+  <!-- <div class="contact-form">
+    <h2 class="title">Send Us a <span>Message</span></h2>
+
+    <form (submit)="onSubmit()" #contactForm="ngForm">
+      <div class="input-box">
+        <input type="text" placeholder="Your Name" required [(ngModel)]="contact.name" name="name">
+      </div>
+
+      <div class="input-box">
+        <input type="email" placeholder="Your Email" required [(ngModel)]="contact.email" name="email">
+      </div>
+
+      <div class="input-box">
+        <textarea rows="5" placeholder="Your Message" required [(ngModel)]="contact.message" name="message"></textarea>
+      </div>
+
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+  </div> -->
+  
+</div> 
+</div>

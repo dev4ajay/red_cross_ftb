@@ -1,4 +1,7 @@
 <app-header></app-header>
+<div class="container mt-4 mb-4">
+    <app-hero-section *ngIf="!isHomePage"></app-hero-section>
+</div>
 <!-- Your header component -->
 <router-outlet></router-outlet>
 <app-footer></app-footer>

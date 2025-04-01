@@ -1,5 +1,5 @@
 .container {
-  max-width: 1000px;
+  // max-width: 1200px;
   margin: auto;
 }
 
@@ -106,14 +106,12 @@ $text-color: #ffffff;
 .who-is-who {
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(135deg, #ff5252, #ff9800);
-
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
   .section-title {
     font-size: 2.5rem;
     font-weight: bold;
     color: $text-color;
     margin-bottom: 40px;
-
     span {
       color: yellow;
     }

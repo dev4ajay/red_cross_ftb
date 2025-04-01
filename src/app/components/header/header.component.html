@@ -32,7 +32,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
       <!-- Logo -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" href="/">
         <img src="assets/logo.jpg" alt="Red Cross Logo" class="logo-img" />
       </a>
 
@@ -51,11 +51,12 @@
 <div class="collapse navbar-collapse" id="navbarNav" #navbarNav>
   <ul class="navbar-nav ms-auto">
     <li class="nav-item">
-      <a class="nav-link" [routerLink]="'/home'" routerLinkActive="active" (click)="closeNavbar()">Home</a>
+      <a class="nav-link" [routerLink]="'/'" routerLinkActive="active" (click)="closeNavbar()">Home</a>
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" routerLinkActive="active">About Us</a>
       <ul class="dropdown-menu">
+        <li><a class="dropdown-item" [routerLink]="'/about'" routerLinkActive="active" (click)="closeNavbar()">About-Us</a></li>
         <li><a class="dropdown-item" [routerLink]="'/mission'" routerLinkActive="active" (click)="closeNavbar()">Mission</a></li>
         <li><a class="dropdown-item" [routerLink]="'/vision'" routerLinkActive="active" (click)="closeNavbar()">Vision</a></li>
       </ul>
